@@ -1,0 +1,11 @@
+#logo_image {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#product_img {
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+}

@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"> 
+	<title>GlutenTector</title>
+	<link rel="stylesheet" href="themes/glutentector.min.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="a" id="accueil">
+		<div data-role="header" data-position="inline">
+			<h1>GlutenTector</h1>
+		</div>
+		<div data-role="main" class="ui-content" data-theme="a">
+			<a href="#" class="ui-btn ui-btn-b" id="scan">SCANNER</a>
+            <div id="logo_image">
+                <img src="img/triangle.svg"  alt="loading" >
+            </div>
+            <img src=""  id="product_img" class="product_img">
+            <p id="barcode_receiver"></p>
+            <p id="return_value"></p>
+			<a href="#disclaimer" class="ui-btn ui-btn-b ui-btn-inline ui-corner-all">Disclaimer</a>
+		</div>
+		<div data-role="footer">
+    			<h1>Application par Laurent_po</h1>
+  		</div> 
+	</div>
+	<div data-role="page" id="disclaimer">
+  		<div data-role="header">
+    		<h1>GlutenTector</h1>
+  		</div>
+
+  		<div data-role="main" class="ui-content">
+    		<p>Toutes les données présentes sur cette application provienne du site openfoodfacts.fr !</p>
+      		<p>N'oubliez jamais que les données présentes içi peuvent êtres incomplètes et érronées, elles proviennent du travail de centaines de contributeurs.</p>
+    		<a href="#accueil">Retour à l'accueil</a>
+  		</div>
+
+  		<div data-role="footer">
+    		<h1>Application par Laurent_po</h1>
+  		</div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>        
+    <script type="text/javascript" src="plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
